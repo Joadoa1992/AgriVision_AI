@@ -1,0 +1,27 @@
+# 1. Virtuelt miljø
+.venv/
+venv/
+ENV/
+
+# 2. Hele datasættet (meget tungt)
+New Plant Diseases Dataset(Augmented)/
+test/
+*.cache
+
+# 3. Modelvægte (YOLO-modeller og trænede vægte)
+*.pt
+*.onnx
+*.engine
+
+# 4. Trænings- og forudsigelsesresultater fra YOLO
+runs/
+
+# 5. PyCharm / IDE konfigurationer
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# 6. Operativsystem-filer
+.DS_Store
+Thumbs.db

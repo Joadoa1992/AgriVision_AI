@@ -1,0 +1,3 @@
+Du løser et problem inden for landbrug (AgriVision).
+Problemet er, at landmænd eller haveejere har svært ved at identificere plantesygdomme præcist.
+En AI kan gøre det hurtigt via et billede, hvilket kan spare afgrøder og mindske brug af sprøjtegift.
