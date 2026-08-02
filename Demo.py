@@ -7,7 +7,7 @@ import os
 
 def run_demo():
     # 1. Stien til din model
-    model_path = "runs/classify/train/weights/last.pt"
+    model_path = "runs/classify/train-2/weights/last.pt"
 
     if not os.path.exists(model_path):
         print(f"❌ Fejl: Kunne ikke finde modellen på {model_path}")

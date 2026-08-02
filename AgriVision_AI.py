@@ -18,15 +18,15 @@ def train_classification_model():
     device = 0 if torch.cuda.is_available() else "cpu"
 
     # Træn YOLOv11-Classification
-    model = YOLO("yolo11m-cls.pt")
+    model = YOLO("yolo11s-cls.pt")
 
     model.train(
-        data=DATASET_PATH,  # klassificering
-        epochs=10,  # Starter med 10, planter er ofte hurtige at lære
-        imgsz=224,  # Billede størrelse
-        batch=32,
-        device=device, # Sætter hardware
-        workers=0
+        data=DATASET_PATH,
+        epochs=10,
+        imgsz=224,
+        batch=64,
+        device=device,
+        workers=4
     )
 
     # Køre test på de lokale test-billeder
@@ -51,7 +51,6 @@ def train_classification_model():
             plt.title("AI'ens gæt ses i toppen af billedet")
             plt.axis('off')
             plt.show()
-
 
 if __name__ == '__main__':
     train_classification_model()
